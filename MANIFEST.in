@@ -1,0 +1,8 @@
+# Include files
+include *.md
+include requirements.txt
+include setup.py
+
+# Include the data files
+recursive-include yolov5/data *
+recursive-include yolov5/models *
