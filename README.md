@@ -12,7 +12,7 @@ python setup.py bdist_wheel
 
 
 ## Issues to resolve when cloning `yolov5` repository
-Integrating `yolov5` repository as an installable package brings import issues issues.
+Integrating `yolov5` repository as an installable package brings import issues.
 This section covers parts of code that were modified.
 
 ### General imports
@@ -22,7 +22,7 @@ For example:
 from yolov5.models.common import DetectMultiBackend
 ```
 
-### Wandba
+### Wandb
 Directory `yolov5.utils.loggers` contains custom module `wandb` which has the same name as an installable pip package `wandb`.
 To prevent import errors the custom module `yolov5.utils.loggers.wandb` was renamed to `yolov5.utils.loggers.wandb_`.
 
