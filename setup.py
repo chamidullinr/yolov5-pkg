@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 def get_requirements():
-    with open('requirements.txt') as f:
+    with open('yolov5/requirements.txt') as f:
         return f.read().splitlines()
 
 setup(
